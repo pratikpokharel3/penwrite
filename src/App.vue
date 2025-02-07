@@ -489,8 +489,8 @@ function handleBottomNavScroll(e: MouseEvent) {
   </main>
 
   <footer id="footer" class="bg-grill px-2 pb-1.5 pt-2 text-xs text-white">
-    <a target="_blank" href="https://github.com/pratikpokharel3/codeforge">
-      <span class="bg-lead rounded-sm px-1.5 py-0.5">Github</span>
+    <a target="_blank" href="https://github.com/pratikpokharel3/penwrite">
+      <span class="rounded-sm bg-lead px-1.5 py-0.5">Github</span>
     </a>
   </footer>
 </template>
