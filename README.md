@@ -1,6 +1,6 @@
-# Codeforge – A CodePen Clone
+# Penwrite – A CodePen Clone
 
-Codeforge is a HTML, CSS, & JavaScript playground app inspired by the original [CodePen](https://codepen.io/pen/) website. The idea and concept behind Codeforge is simple; test your HTML, CSS, & JavaScript code all at one place. 👍
+Penwrite is a HTML, CSS, & JavaScript playground app inspired by the original [CodePen](https://codepen.io/pen/) website. The idea and concept behind Penwrite is simple; test your HTML, CSS, & JavaScript code all at one place. 👍
 
 **Note:**
 This project is intended for educational purpose only.
