@@ -5,7 +5,7 @@ Penwrite is a HTML, CSS, & JavaScript playground app inspired by the original [C
 **Note:**
 This project is intended for educational purpose only.
 
-### Supported Languages
+## Supported Languages
 
 - HTML ✅
 - CSS ✅
