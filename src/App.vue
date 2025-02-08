@@ -420,63 +420,58 @@ function handleBottomNavScroll(e: MouseEvent) {
         class="flex gap-x-0.5 border-t border-slate px-3 pt-1"
       >
         <div
-          class="bg-[#2c303a] px-5 pb-1 pt-1.5 text-white"
-          :class="{ 'bg-tertiary': selectedTab === 'html' }"
+          class="bg-grill px-5 pb-1 pt-1.5 text-white"
+          :class="{ 'bg-lead': selectedTab === 'html' }"
           @click="selectedTab = 'html'"
         >
           HTML
         </div>
 
         <div
-          class="bg-[#2c303a] px-5 pb-1 pt-1.5 text-white"
-          :class="{ 'bg-tertiary': selectedTab === 'css' }"
+          class="bg-grill px-5 pb-1 pt-1.5 text-white"
+          :class="{ 'bg-lead': selectedTab === 'css' }"
           @click="selectedTab = 'css'"
         >
           CSS
         </div>
 
         <div
-          class="bg-[#2c303a] px-5 pb-1 pt-1.5 text-white"
-          :class="{ 'bg-tertiary': selectedTab === 'js' }"
+          class="bg-grill px-5 pb-1 pt-1.5 text-white"
+          :class="{ 'bg-lead': selectedTab === 'js' }"
           @click="selectedTab = 'js'"
         >
           JS
         </div>
       </div>
 
-      <div class="bg-[#282C34]">
-        <div
-          :style="{ width: screenWidth + 'px' }"
-          v-show="selectedTab === 'html'"
-        >
-          <Editor
-            :extensions="htmlExtensions"
-            :editor-height="editorHeight"
-            v-model="htmlContent"
-          />
-        </div>
+      <div
+        :style="{ width: screenWidth + 'px' }"
+        v-show="selectedTab === 'html'"
+      >
+        <Editor
+          :extensions="htmlExtensions"
+          :editor-height="editorHeight"
+          v-model="htmlContent"
+        />
+      </div>
 
-        <div
-          :style="{ width: screenWidth + 'px' }"
-          v-show="selectedTab === 'css'"
-        >
-          <Editor
-            :extensions="cssExtensions"
-            :editor-height="editorHeight"
-            v-model="cssContent"
-          />
-        </div>
+      <div
+        :style="{ width: screenWidth + 'px' }"
+        v-show="selectedTab === 'css'"
+      >
+        <Editor
+          :extensions="cssExtensions"
+          :editor-height="editorHeight"
+          v-model="cssContent"
+        />
+      </div>
 
-        <div
-          :style="{ width: screenWidth + 'px' }"
-          v-show="selectedTab === 'js'"
-        >
-          <Editor
-            :extensions="jsExtensions"
-            :editor-height="editorHeight"
-            v-model="jsContent"
-          />
-        </div>
+      <div :style="{ width: screenWidth + 'px' }" v-show="selectedTab === 'js'">
+        <Editor
+          :extensions="jsExtensions"
+          :editor-height="editorHeight"
+          v-model="jsContent"
+        />
       </div>
     </div>
 
